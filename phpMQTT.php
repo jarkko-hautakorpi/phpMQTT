@@ -420,4 +420,20 @@ class phpMQTT {
 				printf("%4d: %08b : 0x%02x : %s \n",$j,$num,$num,$chr);
 			}
 	}
+
+    /**
+     * @param string $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
+    /**
+     * @param string $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
 }
